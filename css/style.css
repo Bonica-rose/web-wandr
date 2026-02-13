@@ -296,3 +296,48 @@ header {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+/** ==== features ==== */
+.features {
+    background: var(--bg-neutral);
+}
+
+.features-header {
+    text-align: center;
+    max-width: auto;
+}
+
+.features-header h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.features-header p {
+    margin-bottom: 2.5rem;
+    color: var(--text-muted);
+}
+
+.features-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.feature-item {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 12px;
+    background: var(--white);
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-8px);
+}
+
+.feature-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
