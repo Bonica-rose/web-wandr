@@ -623,3 +623,30 @@ header {
         gap: 3rem;
     }
 }
+
+@media (min-width: 1025px) {
+
+    .features-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero p {
+        font-size: 1.25rem;
+    }
+
+    section {
+        padding: 4rem 3rem;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer {
+        padding: 3rem 4rem 1rem;
+    }
+}
