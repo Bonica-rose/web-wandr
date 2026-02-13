@@ -538,3 +538,88 @@ header {
     font-size: 0.85rem;
     color: rgba(255, 255, 255, 0.7);
 }
+
+
+/** ==== breakpoints ==== */
+@media (min-width: 400px) {
+    .btn-group {
+        flex-direction: row;
+    }
+
+    .form-btn,
+    .reset-btn {
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+@media (min-width: 769px) {
+
+    .nav-links {
+        position: static;
+        display: flex !important;
+        flex-direction: row;
+        gap: 2rem;
+        width: auto;
+    }
+
+    .nav-links li {
+        border-bottom: none;
+    }
+
+    .nav-links li:hover {
+        border-bottom: none;
+    }
+
+    .nav-links li:first-child {
+        border-top: none;
+    }
+
+    /*? */
+    .nav-links a {
+        position: relative;
+        display: inline-block;
+    }
+
+    .nav-links a:hover {
+        padding-left: 0;
+    }
+
+    /* Animated Underline Hook */
+    .nav-links a::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0%;
+        height: 1.9px;
+        background: var(--secondary-color);
+        transition: width 0.3s ease-in-out;
+    }
+
+    /* Hover State */
+    .nav-links a:hover::after {
+        width: 100%;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .footer-container span a {
+        padding: 1rem;
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+}
